@@ -57,7 +57,7 @@ function Calculator() {
                 <button
                   type="button"
                   className="Ngold"
-                  onClick={() => handleButtonClick('/')}
+                  onClick={() => handleButtonClick('÷')}
                 >
                   {String.fromCharCode(247)}
                 </button>
@@ -95,7 +95,7 @@ function Calculator() {
                 <button
                   type="button"
                   className="Ngold"
-                  onClick={() => handleButtonClick('*')}
+                  onClick={() => handleButtonClick('x')}
                 >
                   x
                 </button>

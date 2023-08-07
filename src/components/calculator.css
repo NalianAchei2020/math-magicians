@@ -1,0 +1,83 @@
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  width: 100%;
+}
+
+.calculator button {
+  width: 100px;
+  text-align: center;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+
+table {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  font-size: 2rem;
+}
+
+input {
+  width: 400px;
+  padding: 23px;
+  border: none;
+  outline: none;
+  background-color: rgb(99, 97, 97);
+  text-align: right;
+  color: #fff;
+}
+
+.inputNum {
+  padding: 16px;
+  background-color: rgb(112, 107, 107);
+}
+
+table tr td {
+  border: 1px rgb(197, 184, 184) solid;
+  position: relative;
+}
+
+.gold {
+  background-color: rgb(207, 205, 202);
+}
+
+.Ngold {
+  background-color: rgb(255, 115, 0);
+}
+
+.dot {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.zero {
+  position: absolute;
+  right: 30%;
+  top: 0;
+}
+
+.qoutes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.qoutes {
+  font-size: 1.3rem;
+  margin-bottom: 4em;
+}

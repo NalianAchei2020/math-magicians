@@ -31,9 +31,12 @@
 
 # 📖 Math_Magicians <a name="about-project"></a>
 
-"Math_Magicians" is a calculator project that help users to calculate when solving mathematical problems.
+"Math*Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
+*[Math_Magicians]\_ is React project
+
 
 _[Math_Magicians]_ is React project
+
 
 ## 🛠 Built With <a name="built-with"></a>
 

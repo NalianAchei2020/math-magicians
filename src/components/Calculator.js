@@ -1,5 +1,6 @@
 import React from 'react';
 import './calculator.css';
+import CalculatorInput from './calculatorInput';
 
 function Calculator() {
   return (
@@ -9,7 +10,7 @@ function Calculator() {
           <tbody>
             <tr className="inputNum">
               <td colSpan={4}>
-                <input type="text" value={0} readOnly />
+                <CalculatorInput />
               </td>
             </tr>
             <tr>

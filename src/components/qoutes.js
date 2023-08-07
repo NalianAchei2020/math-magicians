@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import './calculator.css';
 
 function Qoutes() {
   const [quotes, setQuotes] = useState([]);
@@ -24,9 +25,9 @@ function Qoutes() {
   };
   useEffect(() => {
     fetchQuotes();
-  }, [quotes]);
+  }, []);
   return (
-    <div>
+    <div className="qoutes-container">
       {loading ? (
         <>
           <div>loading....</div>

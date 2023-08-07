@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- :live Live
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -35,6 +34,10 @@
 "Math*Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 *[Math_Magicians]\_ is React project
 
+
+_[Math_Magicians]_ is React project
+
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -46,9 +49,9 @@
 
 - _Math_Magicians_
 
-## :live Live
+## 🚀 Live Demo
 
-- Comming Soon
+- Coming Soon
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -66,7 +69,7 @@ Clone this repository to your desired folder:
 sh
 
 - Create a folder
-- cd in to folder you just created
+- cd into the folder you just created
 - Type git clone `https://github.com/NalianAchei2020/math-magicians.git`
 
 ### Install
@@ -74,8 +77,8 @@ sh
 Install this project with:
 
 - cmd or vscode terminal
-- Install node js if you have not install
-- Go to your terminal and cd to folder, type npm install. This will install all the npm dependencies
+- Install node js if you have not installed
+- Go to your terminal and cd to a folder, type npm install. This will install all the npm dependencies
 
 ### Usage
 
@@ -85,8 +88,8 @@ To run the project, `npm start`
 
 On your terminal, cd to the current folder and run
 
-- **npx hint** to test the html code
-- npx stylelint `"**/*.{css,scss}"` to test the css code
+- **npx hint** to test the HTML code
+- npx stylelint `"**/*.{css,scss}"` to test the CSS code
 - npx eslint `npx eslint "**/*.{js,jsx}"` to test the react code
 
 ### Deployment

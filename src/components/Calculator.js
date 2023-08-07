@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './calculator.css';
 import CalculatorInput from './calculatorInput';
 import calculate from '../logic/calculator';
+import Qoutes from './qoutes';
 
 function Calculator() {
   const [displayValue, setDisplayValue] = useState('0');
@@ -208,6 +209,9 @@ function Calculator() {
             </tr>
           </tbody>
         </table>
+      </div>
+      <div className="qoutes-container">
+        <Qoutes />
       </div>
     </div>
   );

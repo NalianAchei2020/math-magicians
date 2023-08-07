@@ -1,5 +1,6 @@
 .calculator {
   display: flex;
+  float: column;
   justify-content: center;
   align-items: center;
   margin-top: 3em;
@@ -17,6 +18,7 @@
 table {
   padding: 1em;
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -61,4 +63,18 @@ table tr td {
   position: absolute;
   right: 30%;
   top: 0;
+}
+.qoutes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.name {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.qoutes {
+  font-size: 1.3rem;
 }

@@ -1,4 +1,4 @@
-import Calculator from './components/calculator';
+import Calculator from './components/calculators';
 import Qoutes from './components/qoutes';
 
 function App() {

@@ -32,7 +32,7 @@
 
 # 📖 Math_Magicians <a name="about-project"></a>
 
-"Math_Magicians" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete
+"Math_Magicians" is a calculator projects that help users to calculate when solving mathematical promblems.
 
 _[Math_Magicians]_ is React project
 

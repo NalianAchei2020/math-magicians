@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function CalculatorInput({ displayValue }) {
   return (
@@ -8,5 +8,8 @@ function CalculatorInput({ displayValue }) {
     </div>
   );
 }
+CalculatorInput.propTypes = {
+  displayValue: PropTypes.string.isRequired,
+};
 
 export default CalculatorInput;

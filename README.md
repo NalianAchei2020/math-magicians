@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- :live Live
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -32,7 +31,7 @@
 
 # 📖 Math_Magicians <a name="about-project"></a>
 
-"Math_Magicians" is a calculator projects that help users to calculate when solving mathematical promblems.
+"Math_Magicians" is a calculator project that help users to calculate when solving mathematical problems.
 
 _[Math_Magicians]_ is React project
 
@@ -47,9 +46,9 @@ _[Math_Magicians]_ is React project
 
 - _Math_Magicians_
 
-## :live Live
+## 🚀 Live Demo
 
-- Comming Soon
+- Coming Soon
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -67,7 +66,7 @@ Clone this repository to your desired folder:
 sh
 
 - Create a folder
-- cd in to folder you just created
+- cd into the folder you just created
 - Type git clone `https://github.com/NalianAchei2020/math-magicians.git`
 
 ### Install
@@ -75,8 +74,8 @@ sh
 Install this project with:
 
 - cmd or vscode terminal
-- Install node js if you have not install
-- Go to your terminal and cd to folder, type npm install. This will install all the npm dependencies
+- Install node js if you have not installed
+- Go to your terminal and cd to a folder, type npm install. This will install all the npm dependencies
 
 ### Usage
 
@@ -86,8 +85,8 @@ To run the project, `npm start`
 
 On your terminal, cd to the current folder and run
 
-- **npx hint** to test the html code
-- npx stylelint `"**/*.{css,scss}"` to test the css code
+- **npx hint** to test the HTML code
+- npx stylelint `"**/*.{css,scss}"` to test the CSS code
 - npx eslint `npx eslint "**/*.{js,jsx}"` to test the react code
 
 ### Deployment

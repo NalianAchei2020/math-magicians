@@ -35,7 +35,12 @@ function Qoutes() {
         </>
       ) : (
         <div className="qoutes">
-          <p>{quotes.quote}</p>
+          <div>
+            <span className="name">Quote:</span>
+            &nbsp;
+            <span>{quotes.quote}</span>
+          </div>
+          <br />
           <div>
             <span className="name">Author:</span>
             &nbsp;

@@ -64,7 +64,7 @@ sh
 
 - Create a folder
 - cd in to folder you just created
-- Type git clone `https://github.com/NalianAchei2020/Math_Magicians.git`
+- Type git clone `https://github.com/NalianAchei2020/math-magicians.git`
 
 ### Install
 

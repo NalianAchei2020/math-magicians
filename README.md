@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- :live Live
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -26,7 +27,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -46,6 +46,10 @@ _[Math_Magicians]_ is React project
 ### Key Features <a name="key-features"></a>
 
 - _Math_Magicians_
+
+## :live Live
+
+- Comming Soon
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -110,7 +114,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/NalianAchei2020/Math_Magicians/issues).
+Feel free to check the [issues page](https://github.com/NalianAchei2020/math-magicians/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -119,7 +123,3 @@ If you like this project, please do well to give it a star
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank the Microverse community for their lessons
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](https://github.com/NalianAchei2020/Math_Magicians/blob/main/LICENSE) licensed

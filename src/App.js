@@ -2,10 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Calculator from './components/calculator';
 import Qoutes from './components/qoutes';
 import Home from './components/home/home';
+import Header from './components/header/header';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -13,8 +16,6 @@ function App() {
           <Route path="/qoutes" element={<Qoutes />} />
         </Routes>
       </Router>
-      <Calculator />
-      <Qoutes />
     </div>
   );
 }

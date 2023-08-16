@@ -18,7 +18,7 @@ function Calculator() {
     <div>
       <div className="container calculator">
         <div>
-          <h2 className="doMath">Let do some math!</h2>
+          <h2 className="doMath">Let&apos;s do some math!</h2>
         </div>
         <table>
           <tbody>

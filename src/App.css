@@ -1,6 +1,7 @@
 .App {
   margin: 0;
 }
+
 .App::before,
 .App::after {
   margin: 0;

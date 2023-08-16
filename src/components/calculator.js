@@ -16,7 +16,10 @@ function Calculator() {
   };
   return (
     <div>
-      <div className="calculator">
+      <div className="container calculator">
+        <div>
+          <h2 className="doMath">Let do some math!</h2>
+        </div>
         <table>
           <tbody>
             <tr className="inputNum">

@@ -27,7 +27,7 @@ function Qoutes() {
     fetchQuotes();
   }, []);
   return (
-    <div className="qoutes-container">
+    <div className="container qoutes-container">
       {loading ? (
         <>
           <div>loading....</div>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './calculator.css';
-import CalculatorInput from './calculatorInput';
-import calculate from '../logic/calculate';
+import calculate from '../logic/merncalculate';
 
 function Calculator() {
   const [displayValue, setDisplayValue] = useState('0');
@@ -22,7 +21,7 @@ function Calculator() {
           <tbody>
             <tr className="inputNum">
               <td colSpan={4}>
-                <CalculatorInput displayValue={displayValue} />
+                <input type="text" value={displayValue} readOnly />
               </td>
             </tr>
             <tr>

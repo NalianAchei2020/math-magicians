@@ -34,6 +34,7 @@
 "Math*Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 *[Math_Magicians]\_ is React project
 
+![image](https://github.com/NalianAchei2020/math-magicians/assets/88759996/cc26b45f-133e-477a-8c49-51da943239b0)
 
 _[Math_Magicians]_ is React project
 

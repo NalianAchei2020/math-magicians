@@ -4,7 +4,7 @@ import './header.css';
 function Header() {
   return (
     <div className="header">
-      <h2>Math Matheticians</h2>
+      <h2>Math Magicians</h2>
       <nav className="nav">
         <a href="/">Home</a>
         <a href="/calculator">Calculator</a>

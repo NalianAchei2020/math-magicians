@@ -2,6 +2,8 @@ import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import Qoutes from '../../components/qoutes';
 
+const axios = require('axios');
+
 jest.mock('axios', () => ({
   __esModule: true,
   default: jest.fn(),
@@ -14,7 +16,6 @@ describe('Qoutes component', () => {
       author: 'Test Author',
       category: 'Test Category',
     };
-    const axios = require('axios');
     axios.default.mockResolvedValueOnce({ data: [mockQuotes] });
 
     const { getByText } = render(<Qoutes />);
@@ -47,7 +48,6 @@ describe('Qoutes component', () => {
 
   test('handles error during data fetching', async () => {
     const errorMessage = 'Failed to fetch quotes.';
-    const axios = require('axios');
     axios.default.mockRejectedValueOnce(new Error(errorMessage));
 
     const { getByText } = render(<Qoutes />);

@@ -1,7 +1,7 @@
 import { MemoryRouter } from 'react-router-dom';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { unmountComponentAtNode } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
 import Header from '../../components/header/header';
@@ -15,7 +15,7 @@ beforeEach(() => {
 
 afterEach(() => {
   // cleanup on exiting
-  unmountComponentAtNode(container);
+  createRoot(container);
   container.remove();
   container = null;
 });
@@ -26,7 +26,7 @@ it('testing for the UI of Navbar', () => {
       <MemoryRouter>
         <Header />
       </MemoryRouter>,
-      container
+      container,
     );
   });
 

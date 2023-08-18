@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import { unmountComponentAtNode } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
 import Calculator from '../../components/Calculator';
@@ -14,7 +14,7 @@ beforeEach(() => {
 
 afterEach(() => {
   // cleanup on exiting
-  unmountComponentAtNode(container);
+  createRoot(container);
   container.remove();
   container = null;
 });

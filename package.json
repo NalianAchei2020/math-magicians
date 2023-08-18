@@ -2,10 +2,6 @@
   "name": "math-magicians",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "dependencies": {
     "@mui/material": "^5.14.5",
     "@testing-library/jest-dom": "^5.17.0",

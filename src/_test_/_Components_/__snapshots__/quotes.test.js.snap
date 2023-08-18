@@ -1,8 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing for the UI of QuotePage 1`] = `
-"<div class=\\"container qoutes-container\\">
-  <div>loading....</div>
-  <div>Cannot read properties of undefined (reading 'data')</div>
-</div>"
+exports[`Qoutes component handles error during data fetching 1`] = `
+<div>
+  loading....
+</div>
+`;
+
+exports[`Qoutes component handles error during data fetching 2`] = `
+<div>
+  Failed to fetch quotes.
+</div>
+`;
+
+exports[`Qoutes component renders correctly 1`] = `
+<div>
+  loading....
+</div>
+`;
+
+exports[`Qoutes component renders correctly 2`] = `
+<span
+  class="name"
+>
+  Quote:
+</span>
+`;
+
+exports[`Qoutes component renders correctly 3`] = `
+<span
+  class="name"
+>
+  Author:
+</span>
+`;
+
+exports[`Qoutes component renders correctly 4`] = `
+<span
+  class="name"
+>
+  Category:
+</span>
+`;
+
+exports[`Qoutes component renders correctly 5`] = `
+<span>
+  Test Quote
+</span>
+`;
+
+exports[`Qoutes component renders correctly 6`] = `
+<span>
+  Test Author
+</span>
+`;
+
+exports[`Qoutes component renders correctly 7`] = `
+<span>
+  Test Category
+</span>
 `;

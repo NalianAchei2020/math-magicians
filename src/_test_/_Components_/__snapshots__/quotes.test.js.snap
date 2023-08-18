@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing for the UI of QuotePage 1`] = `
+"<div class=\\"container qoutes-container\\">
+  <div>loading....</div>
+  <div>Cannot read properties of undefined (reading 'data')</div>
+</div>"
+`;

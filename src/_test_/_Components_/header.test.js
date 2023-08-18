@@ -25,7 +25,8 @@ it('testing for the UI of Navbar', () => {
     render(
       <MemoryRouter>
         <Header />
-      </MemoryRouter>
+      </MemoryRouter>,
+      container
     );
   });
 

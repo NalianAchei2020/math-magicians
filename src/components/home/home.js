@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container } from '@mui/material';
 import './home.css';
 
 function Home() {
   return (
     <div className="home">
-      <Container fixed>
+      <div className="container">
         <h3>Welcome to our page</h3>
         <div>
           <p>
@@ -31,7 +30,7 @@ function Home() {
             maximus dictum. Vivamus elementum tincidunt luctus.
           </p>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

@@ -1,50 +1,62 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { unmountComponentAtNode } from 'react-dom';
-import { act } from 'react-dom/test-utils';
-import pretty from 'pretty';
-import MockAdapter from 'axios-mock-adapter';
+import { render, waitFor } from '@testing-library/react';
 import axios from 'axios';
-
 import Qoutes from '../../components/qoutes';
 
-let container = null;
-let mock = null;
+jest.mock('axios');
 
-beforeEach(() => {
-  // Setup a DOM element as a render target
-  container = document.createElement('div');
-  document.body.appendChild(container);
+describe('Qoutes component', () => {
+  test('renders correctly', async () => {
+    const mockQuotes = {
+      quote: 'Test Quote',
+      author: 'Test Author',
+      category: 'Test Category',
+    };
+    axios.mockResolvedValueOnce({ data: [mockQuotes] });
 
-  // Create a new mock adapter instance
-  mock = new MockAdapter(axios);
-});
+    const { getByText } = render(<Qoutes />);
 
-afterEach(() => {
-  // Cleanup on exiting
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
+    // Check if loading message is rendered
+    const loadingMessage = getByText('loading....');
+    expect(loadingMessage).toBeInTheDocument();
 
-it('testing for the UI of QuotePage', async () => {
-  // Define the mock response data
-  const responseData = [
-    {
-      quote: 'Test quote',
-      author: 'Test author',
-      category: 'Test category',
-    },
-  ];
+    // Wait for the data to be fetched and rendered
+    await waitFor(() => {
+      // Check if the quote, author, and category are rendered correctly
+      const quoteElement = getByText('Quote:');
+      const authorElement = getByText('Author:');
+      const categoryElement = getByText('Category:');
 
-  // Mock the API request
-  mock
-    .onGet('https://api.api-ninjas.com/v1/quotes?category=happiness')
-    .reply(200, responseData);
+      expect(quoteElement).toBeInTheDocument();
+      expect(authorElement).toBeInTheDocument();
+      expect(categoryElement).toBeInTheDocument();
 
-  await act(async () => {
-    render(<Qoutes />, container);
+      // Check if the data is rendered correctly
+      const quoteValueElement = getByText(mockQuotes.quote);
+      const authorValueElement = getByText(mockQuotes.author);
+      const categoryValueElement = getByText(mockQuotes.category);
+
+      expect(quoteValueElement).toBeInTheDocument();
+      expect(authorValueElement).toBeInTheDocument();
+      expect(categoryValueElement).toBeInTheDocument();
+    });
   });
 
-  expect(pretty(container.innerHTML)).toMatchSnapshot();
+  test('handles error during data fetching', async () => {
+    const errorMessage = 'Failed to fetch quotes.';
+    axios.mockRejectedValueOnce(new Error(errorMessage));
+
+    const { getByText } = render(<Qoutes />);
+
+    // Check if loading message is rendered
+    const loadingMessage = getByText('loading....');
+    expect(loadingMessage).toBeInTheDocument();
+
+    // Wait for the error message to be rendered
+    await waitFor(() => {
+      // Check if the error message is rendered correctly
+      const errorElement = getByText(errorMessage);
+      expect(errorElement).toBeInTheDocument();
+    });
+  });
 });

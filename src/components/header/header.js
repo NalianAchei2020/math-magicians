@@ -4,23 +4,17 @@ import './header.css';
 
 function Header() {
   return (
-    <div className="main-nav d-flex">
-      <h2 className="header">Math Magicians</h2>
-      <ul className="nav-links d-flex j-center a-center">
+    <div>
+      <h2>Math Magicians</h2>
+      <ul>
         <li>
-          <Link to="/" className="nav-link" data-testid="home">
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/calculator" className="nav-link" data-testid="calculator">
-            Calculator
-          </Link>
+          <Link to="/calculator">Calculator</Link>
         </li>
         <li>
-          <Link to="/quotes" className="nav-link" data-testid="quote">
-            Quote
-          </Link>
+          <Link to="/qoutes">Quote</Link>
         </li>
       </ul>
     </div>
